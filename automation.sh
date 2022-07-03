@@ -57,4 +57,4 @@ tar -cvf /tmp/${myname}-httpd-logs-${timestamp}.tar /var/log/apache2/*.log
 echo
 echo "${Blue}Copying the logs from /tmp to the S3 bucket${NC}"
 
-#aws s3 cp /tmp/${myname}-httpd-logs-${timestamp}.tar s3://${s3_bucketname}/${myname}-httpd-logs-${timestamp}.tar
+aws s3 cp /tmp/${myname}-httpd-logs-${timestamp}.tar s3://${s3_bucketname}/${myname}-httpd-logs-${timestamp}.tar
