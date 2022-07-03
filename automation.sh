@@ -55,6 +55,7 @@ echo
 echo "${Blue}Copying the logs from /tmp to the S3 bucket${NC}"
 
 aws s3 cp /tmp/${myname}-httpd-logs-${timestamp}.tar s3://${s3_bucketname}/${myname}-httpd-logs-${timestamp}.tar
+<<<<<<< HEAD
 echo
 echo "${Blue}Check for inventory.html file in /var/www/html/ ${NC}"
 echo
@@ -87,3 +88,5 @@ else
 fi
 echo
 #------------------Script Completed-------------------------------------------------------------------------------------------
+=======
+>>>>>>> 1beee0965bb013888cc9d87951caf2fd96a07b2e
